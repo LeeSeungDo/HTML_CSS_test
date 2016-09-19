@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/test02.css">
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+<body>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<form>
+		<fieldset>
+			<legend>로그인 정보</legend>
+			<ul>
+				<li>아이디 : <input type="text" id="user_id"></li>
+				<li>비밀번호 : <input type="password" id="pw"></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>가입자 정보</legend>
+			<ul>
+				<li>이름 : <input type="text" id="user_name"></li>
+				<li>메일 주소 : <input type="text" id="user_mail"></li>
+				<li>생년월일 : <input type="text" id="birth"></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<input type="submit" value="가입하기">
+		</fieldset>
+	</form>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<form>
+		<fieldset id="register">
+			<legend>
+				수강 과목을 선택하세요<small>(1과목 선택 가능)/label 효과</small>
+			</legend>
+			<ul>
+				<li><label><input type="radio" name="spk" value="low" checked>영어 회화(초급)</label></li>
+				<li><label><input type="radio" name="spk" value="middle" >영어 회화(중급)</label></li>
+				<li><label><input type="radio" name="spk" value="high" >영어 회화(고급)</label></li>
+			</ul>
+		</fieldset>
+	</form>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<form>
+		<fieldset>
+			<legend>
+				form type 종류
+			</legend>
+			<ul>
+				<li><input type="text" autofocus>type="text"</li>
+				<li>------------------------------------------</li>
+				<li><input type="password">type="password"</li>
+				<li>------------------------------------------</li>
+				<li><input type="search">type="search"</li>
+				<li>------------------------------------------</li>
+				<li><input type="url">type="url"</li>
+				<li>------------------------------------------</li>
+				<li><input type="email" placeholder="placeholder=''" required>type="email"</li>
+				<li>------------------------------------------</li>
+				<li><input type="tel">type="tel"</li>
+				<li>------------------------------------------</li>
+				<li><input type="number" min="1" max="5" value="2">type="number"</li>
+				<li>------------------------------------------</li>
+				<li><input type="range" min="1" max="5" value="3">type="range"</li>
+				<li>------------------------------------------</li>
+				<li><label><input type="radio" value="yes" name="r1" checked>동의함</label><label><input type="radio" value="no" name="r1">동의하지 않음</label></li>
+				<li>------------------------------------------</li>
+				<li><label><input type="checkbox">type="checkbox1"</label><label><input type="checkbox">type="checkbox2"</label><label><input type="checkbox">type="checkbox3"</label></li>
+				<li>------------------------------------------</li>
+				<li><input type="color" value="">type="color"</li>
+				<li>------------------------------------------</li>
+				<li><input type="date">type="date" id="start"<input type="date">id="end"</li>
+				<li>------------------------------------------</li>
+				<li><input type="time" value="09:00">type="time" id="start"<input type="time" value="18:00">id="end"</li>
+				<li>------------------------------------------</li>
+				<fieldset>
+					<label><input type="submit" value="type='submit'"></label>
+					<label><input type="reset" value="type='reset'"></label>
+				</fieldset>
+				<li>------------------------------------------</li>
+				<fieldset>
+				이미지 버튼--&gt;<input type="image" src="../img/login.png">
+				</fieldset>
+			</ul>
+		</fieldset>
+	</form>
+	<script src="../js/test01.js"></script>
+</body>
+</html>

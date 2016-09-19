@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+fieldset {
+	margin: 15px 10px;
+	width: 600px;
+}
+
+fieldset legend {
+	font-weight:bold;
+	font-size: 18px;
+	color: purple;
+}
+
+.accent {color: red; }
+.accent {color: blue; }
+
+.accent1 {color: red !important; }
+.accent1 {color: blue; }
+
+#container ul {
+	border: 1px dotted black;
+	width: 600px;
+}
+
+#container ul.ul1 {
+	border: 1px dotted black;
+	width: 500px;
+	margin-bottom: 10px;
+}
+
+#container1 > ul {
+	border: 1px dotted black;
+	width: 600px;
+}
+
+.h1 + ul {
+	color: blue;
+	font-weight: bold;
+}
+
+.h11 ~ ul {
+	color: blue;
+	font-weight: bold;
+}
+
+input[type="text"] {
+	width: 150px;
+	background-color: navy;
+	border: 1px solid #000;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+

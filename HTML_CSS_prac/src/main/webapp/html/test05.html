@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/test05.css">
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+<body>
+	<fieldset>
+		<legend>외부 css 파일 설정</legend>
+		<p>&lt;link rel="stylesheet" type="text/css" href="외부 css 파일 경로"&gt;</p>
+	</fieldset>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<fieldset>
+		<legend>css 우선순위</legend>
+		<p class="accent">!important 안썼을 때 마지막 스타일시트가 적용!</p>
+		<p class="accent1">!important 썼을 때 !important 사용한 스타일시트가 적용!</p>
+	</fieldset>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<section id="container">
+		<header><h1>하위 선택자 (바로 밑 [자식 선택자]랑 비교해서 보세요)</h1></header>
+		<p>.container ul</p>
+		<ul>
+			<li>테스트 1
+				<ul class="ul1">
+					<li>test1</li>
+					<li>test2</li>
+				</ul>
+			</li>
+			<li>테스트 2
+				<ul class="ul1">
+					<li>test3</li>
+					<li>test4</li>
+					<li>test5</li>
+					<li>test6</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<section id="container1">
+		<header><h1>자식 선택자</h1></header>
+		<p>.container > ul</p>
+		<ul>
+			<li>테스트 1
+				<ul>
+					<li>test1</li>
+					<li>test2</li>
+				</ul>
+			</li>
+			<li>테스트 2
+				<ul>
+					<li>test3</li>
+					<li>test4</li>
+					<li>test5</li>
+					<li>test6</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<fieldset>
+		<h1 class="h1">인접 형제 선택자 (h1 + ul)</h1>
+		<ul>
+			<li>test1</li>
+			<li>test2</li>
+		</ul>
+		<ul>
+			<li>test3</li>
+			<li>test4</li>
+			<li>test5</li>
+			<li>test6</li>
+		</ul>
+	</fieldset>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<fieldset>
+		<h1 class="h11">형제 선택자 (h1 ~ ul)</h1>
+		<ul>
+			<li>test1</li>
+			<li>test2</li>
+		</ul>
+		<ul>
+			<li>test3</li>
+			<li>test4</li>
+			<li>test5</li>
+			<li>test6</li>
+		</ul>
+	</fieldset>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	<fieldset>
+		<h1>속성 선택자 (input[type="text"])</h1>
+		<ul>
+			<li>test1</li>
+			<li>test2<input type="text" placeholder="input[type='text']" ></li>
+		</ul>
+		<ul>
+			<li>test3</li>
+			<li>test4<input type="text" placeholder="input[type='text']" ></li>
+			<li>test5</li>
+			<li>test6</li>
+		</ul>
+	</fieldset>
+	<p>---------------------------------------------------------------------------------------------------</p>
+	
+	
+	<script src="../js/test05.js"></script>
+</body>
+</html>

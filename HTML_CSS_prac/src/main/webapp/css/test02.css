@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+li {
+	list-style: none;
+}
+
+li label {
+	width: 120px;
+	font-size: 12px;
+	font-weight: bold;
+	color: blue;
+	line-height: 25px;
+}

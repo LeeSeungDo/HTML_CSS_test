@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+#container1:after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+#container1 #ex1 {
+	float: left;
+	witdh: 50px;
+	height: 50px;
+	background-color: #CCC;
+}
+
+#container1 #ex2 {
+	float: right;
+	witdh: 50px;
+	height: 50px;
+	background-color: #AAA;
+}
+
+.ul1 {
+	list-style-type: square;
+}
+
+.table1 {
+	border: solid 3px black; 
+}
+
+.table1 th {
+	border: dashed 2px red;
+}
+
+.table1 td:HOVER {
+	background: aqua;
+}
+
+.table1 td {
+	border: dotted 1px blue;
+}
+
+#a2, #a3 {
+	text-decoration: none;
+}

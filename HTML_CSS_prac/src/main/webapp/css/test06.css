@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+fieldset {
+	margin: 15px 10px;
+	width: 600px;
+}
+
+fieldset legend {
+	font-weight:bold;
+	font-size: 18px;
+	color: purple;
+}
+
+a:link {
+	color: aqua;
+	text-decoration: none;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+pre:focus {
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
